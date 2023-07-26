@@ -10,68 +10,54 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-      <!-- Google font Poppins -->
+      <!-- Google font Lato -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
 
   <!-- Custom Styles -->
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bike-primary': '#E76F51',
-                'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
-              }
-            }
-          }
-        }
-      </script>
 
     <style>
-        .font-poppins{
-            font-family: 'Poppins', sans-serif;
+        .font-lato{
+            font-family: 'Lato', sans-serif;
         }
+
     </style>
 
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="grid grid-flow-col gap-4">
+    <header class="font-lato text-white">
+
+        <!-- Navbar Started -->
+
+        <nav class="font-lato gap-8 mt-8 mb-8">
+            <div class="navbar bg-base-100 bg-[#F85559]  rounded-full">
+                <div class="grid grid-flow-col gap-4 pl-96 ">
                     <a class="link link-hover">Home</a> 
                     <a class="link link-hover">About us</a> 
                     <a class="link link-hover">Shop</a> 
                     <a class="link link-hover">All Fruits</a> 
+
+                    <div class="flex text-3xl font-lato-900 pl-80">
+                    <img src="images/logo.png" alt="">
+                    <h1 class="text-3xl font-lato-900 p-4">Fruit Burst</h1>
+                    </div>
+
+                    <input type="text" placeholder="Search Here" class="input input-bordered w-full max-w-xs ml-32 rounded-full" />
+                
+
                 </div>
-                <div class="flex-none gap-2">
-                  <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                  </div>
-                  <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                      
-                    </label>
-                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                      <li>
-                        <a class="justify-between">
-                          Profile
-                          <span class="badge">New</span>
-                        </a>
-                      </li>
-                      <li><a>Settings</a></li>
-                      <li><a>Logout</a></li>
-                    </ul>
-                  </div>
-                </div>
+
+               
               </div>
         </nav>
+
+
+        <!-- Navbar Ended -->
+
     </header>
     <main>
 
@@ -79,16 +65,18 @@
 
 
 
-    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+    <!-- Footer Started -->
+
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded font-lato bg-black text-white">
 
         <div class="flex">
 
             <img src="images/logo.png" alt="">
-            <h1 class="text-3xl">Fruit Burst</h1>
+            <h1 class="text-3xl font-lato-900">Fruit Burst</h1>
 
         </div>
 
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid grid-flow-col gap-4 font-lato">
           <a class="link link-hover">Home</a> 
           <a class="link link-hover">About us</a> 
           <a class="link link-hover">Shop</a> 
@@ -107,6 +95,8 @@
           <p>Copyright © 2023 - FruitBurst</p>
         </div>
       </footer>
+
+      <!-- Footer Ended -->
 
 </body>
 </html>
